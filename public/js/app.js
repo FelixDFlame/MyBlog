@@ -14049,10 +14049,12 @@ window.Vue = __webpack_require__(37);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+$("example-component:nth-child(2)").css("background-color", "yellow");
 Vue.component('example-component', __webpack_require__(40));
 Vue.component('myform', __webpack_require__(43));
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  props: ['title', 'path']
 });
 
 /***/ }),
@@ -47512,7 +47514,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['imagesrc'],
+  props: ['title', 'path'],
   mounted: function mounted() {
     console.log('Component mounted.');
   }
@@ -47532,23 +47534,16 @@ var render = function() {
     [
       _c("img", {
         staticClass: "card-img-top",
-        attrs: { src: _vm.imagesrc, alt: "Card image cap" }
+        attrs: { src: _vm.path, alt: "Card image cap" }
       }),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.title))])
+      ])
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("p", { staticClass: "card-text" }, [_vm._v("My Blog Test")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

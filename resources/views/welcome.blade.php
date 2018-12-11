@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
          <!-- Styles -->
         <style>
             html, body {
@@ -97,9 +98,9 @@
                 <div id="app">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <example-component imagesrc="{{ asset('images/img.jpg') }}"></example-component>
-                            <example-component imagesrc="{{ asset('images/img2.jpg') }}"></example-component>
-                            <example-component imagesrc="{{ asset('images/img3.png') }}"></example-component>
+                            <example-component path="{{ asset('images/img.jpg') }}" title="111111"></example-component>
+                            <example-component path="{{ asset('images/img2.jpg') }}" title="22"></example-component>
+                            <example-component path="{{ asset('images/img3.png') }}"  title="33"></example-component>
                         </div>
                     </div>
                 </div>
