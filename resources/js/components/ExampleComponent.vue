@@ -1,15 +1,8 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
+    <div class="card" style="width: 18rem; margin:0 auto;">
+        <img class="card-img-top" src="../../images/img.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">My Blog Test</p>
         </div>
     </div>
 </template>
