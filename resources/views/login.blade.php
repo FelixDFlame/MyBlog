@@ -9,7 +9,9 @@
 
 </head>
 <body>
-    <myform></myform>
-    <script src="app.js"></script>
+    <div class="" id="app">
+      <myform></myform>
+    </div>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
