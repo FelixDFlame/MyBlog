@@ -15,9 +15,13 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+$("example-component:nth-child(2)").css("background-color", "yellow");
+
+
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('myform', require('./components/loginForm.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    props: ['title','path']
 });
