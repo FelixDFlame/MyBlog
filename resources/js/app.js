@@ -23,5 +23,4 @@ Vue.component('myform', require('./components/loginForm.vue'));
 
 const app = new Vue({
     el: '#app',
-    props: ['title','path']
 });
