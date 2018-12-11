@@ -14028,7 +14028,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(47);
+module.exports = __webpack_require__(46);
 
 
 /***/ }),
@@ -14050,7 +14050,7 @@ window.Vue = __webpack_require__(37);
  */
 
 Vue.component('example-component', __webpack_require__(40));
-Vue.component('myform', __webpack_require__(44));
+Vue.component('myform', __webpack_require__(43));
 var app = new Vue({
   el: '#app'
 });
@@ -47474,6 +47474,7 @@ var Component = normalizeComponent(
 )
 Component.options.__file = "resources/js/components/ExampleComponent.vue"
 
+
 /* hot reload */
 if (false) {(function () {
   var hotAPI = require("vue-hot-reload-api")
@@ -47508,7 +47509,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['imagesrc'],
   mounted: function mounted() {
     console.log('Component mounted.');
   }
@@ -47522,30 +47526,27 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "card", staticStyle: { width: "18rem", margin: "0 auto" } },
+    [
+      _c("img", {
+        staticClass: "card-img-top",
+        attrs: { src: _vm.imagesrc, alt: "Card image cap" }
+      }),
+      _vm._v(" "),
+      _vm._m(0)
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "card",
-        staticStyle: { width: "18rem", margin: "0 auto" }
-      },
-      [
-        _c("img", {
-          staticClass: "card-img-top",
-          attrs: { src: __webpack_require__(43), alt: "Card image cap" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("p", { staticClass: "card-text" }, [_vm._v("My Blog Test")])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "card-body" }, [
+      _c("p", { staticClass: "card-text" }, [_vm._v("My Blog Test")])
+    ])
   }
 ]
 render._withStripped = true
@@ -47559,20 +47560,14 @@ if (false) {
 
 /***/ }),
 /* 43 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/img.jpg?53aa494b4e149d7e2dd381bce78efa30";
-
-/***/ }),
-/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(11)
 /* script */
-var __vue_script__ = __webpack_require__(45)
+var __vue_script__ = __webpack_require__(44)
 /* template */
-var __vue_template__ = __webpack_require__(46)
+var __vue_template__ = __webpack_require__(45)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47611,7 +47606,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47637,7 +47632,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47680,7 +47675,7 @@ if (false) {
 }
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

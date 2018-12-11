@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
          <!-- Styles -->
@@ -97,9 +97,9 @@
                 <div id="app">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <example-component></example-component>
-                            <example-component></example-component>
-                            <example-component></example-component>
+                            <example-component imagesrc="{{ asset('images/img.jpg') }}"></example-component>
+                            <example-component imagesrc="{{ asset('images/img2.jpg') }}"></example-component>
+                            <example-component imagesrc="{{ asset('images/img3.png') }}"></example-component>
                         </div>
                     </div>
                 </div>
