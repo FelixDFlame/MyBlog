@@ -105,6 +105,11 @@
                         <div class="row justify-content-center">
                             <example-for :data=["1","3","2","1","9"]></example-for>
                         </div>
+                        <div class="row justify-content-center">
+                            @for ($i = 0; $i < sizeof($title); $i++)
+                            <example-component path="{{ asset($path[$i]) }}" title="{{ $title[$i] }}"></example-component>
+                            @endfor
+                        </div>
                     </div>
                 </div>
                 <script src="../js/app.js"></script>
