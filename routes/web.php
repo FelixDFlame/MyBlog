@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',[
+        'title' => ["Beatless","Guilty Crown","Sakurasou no Pet no Kanojo@"],
+        'path' => [
+            "images/img.jpg",
+            "images/img2.jpg",
+            "images/img3.png"
+        ]
+    ]);
 });
 
 Route::get('/login', function () {

@@ -98,9 +98,15 @@
                 <div id="app">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <example-component path="{{ asset('images/img.jpg') }}" title="111111"></example-component>
-                            <example-component path="{{ asset('images/img2.jpg') }}" title="22"></example-component>
-                            <example-component path="{{ asset('images/img3.png') }}"  title="33"></example-component>
+                            <example-component path="{{ asset($path[0]) }}" title="{{ $title[0] }}"></example-component>
+                            <example-component path="{{ asset($path[1]) }}" title="{{ $title[1] }}"></example-component>
+                            <example-component path="{{ asset($path[2]) }}"  title="{{ $title[2] }}"></example-component>
+                        </div>
+                        <div class="row justify-content-center">
+                            <ul v-for="$i in $title">
+                                <li>@{{i}}</li>
+                                <!-- <example-component path="@{{ asset($path[i]) }}"  title="@{{ $title[i] }}"></example-component> -->
+                            </ul>
                         </div>
                     </div>
                 </div>
