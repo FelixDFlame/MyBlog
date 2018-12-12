@@ -103,10 +103,7 @@
                             <example-component path="{{ asset($path[2]) }}"  title="{{ $title[2] }}"></example-component>
                         </div>
                         <div class="row justify-content-center">
-                            <ul v-for="$i in $title">
-                                <li>@{{i}}</li>
-                                <!-- <example-component path="@{{ asset($path[i]) }}"  title="@{{ $title[i] }}"></example-component> -->
-                            </ul>
+                            <example-for :data=["1","3","2","1","9"]></example-for>
                         </div>
                     </div>
                 </div>

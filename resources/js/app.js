@@ -20,6 +20,8 @@ $("example-component:nth-child(2)").css("background-color", "yellow");
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('myform', require('./components/loginForm.vue'));
+Vue.component('example-for', require('./components/ExampleFor.vue'));
+
 
 const app = new Vue({
     el: '#app',
