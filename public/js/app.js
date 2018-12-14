@@ -14064,15 +14064,16 @@ var app = new Vue({
   el: '#app',
   data: function data() {
     return {
-      info: "aha"
+      info: null
     };
-  }
-  //   mounted () {
-  //     axios
-  //       .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-  //       .then(response => (this.info = response))
-  //   }
+  },
+  mounted: function mounted() {
+    var _this = this;
 
+    axios.get('POST https://api.coindesk.com/v1/bpi/currentprice.json').then(function (response) {
+      return _this.info = response;
+    });
+  }
 });
 
 /***/ }),

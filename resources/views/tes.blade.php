@@ -13,6 +13,7 @@
     <h1>HAI</h1>
     <div id="app">
         <callingapi info="jir"></callingapi>
+        <div v-text="info"></div>
     </div>
     <script src="../js/app.js"></script>
 </body>
