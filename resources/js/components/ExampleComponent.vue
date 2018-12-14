@@ -1,5 +1,3 @@
-<props>
-</props>
 <template>
     <div class="card" style="width: 18rem; margin:0 auto;">
         <img class="card-img-top" :src=path alt="Card image cap">

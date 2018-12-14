@@ -1,8 +1,8 @@
 <template>
-  <ul>
-      <li v-for="i in data">{{ i }}</li>
-      <!-- <example-component path="@{{ asset($path[i]) }}"  title="@{{ $title[i] }}"></example-component> -->
-  </ul>
+    <ul>
+        <li v-for="i in data">{{ i }}</li>
+        <!-- <example-component path="@{{ asset($path[i]) }}"  title="@{{ $title[i] }}"></example-component> -->
+    </ul>
 </template>
 <script>
     export default {

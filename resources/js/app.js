@@ -15,14 +15,24 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-$("example-component:nth-child(2)").css("background-color", "yellow");
+// $("example-component:nth-child(2)").css("background-color", "yellow");
 
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('myform', require('./components/loginForm.vue'));
 Vue.component('example-for', require('./components/ExampleFor.vue'));
-
+Vue.component('callingapi', require('./components/CallingAPI.vue'));
 
 const app = new Vue({
     el: '#app',
+    data () {
+    return {
+      info: null
+    }
+  }
+//   mounted () {
+//     axios
+//       .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+//       .then(response => (this.info = response))
+//   }
 });
