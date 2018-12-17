@@ -10,10 +10,10 @@
 
 </head>
 <body>
-    <h1>HAI</h1>
+    <h1>HAI ini bukan dari component vue</h1>
     <div id="app">
-        <callingapi info="jir"></callingapi>
-        <div v-text="info"></div>
+        <callingapi info="{{$info}}"></callingapi>
+        {{-- <div>{{$info}}</div> --}}
     </div>
     <script src="../js/app.js"></script>
 </body>

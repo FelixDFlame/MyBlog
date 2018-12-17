@@ -11,21 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome',[
-        'title' => ["Beatless","Guilty Crown","Sakurasou no Pet no Kanojo@"],
-        'path' => [
-            "images/img.jpg",
-            "images/img2.jpg",
-            "images/img3.png"
-        ]
-    ]);
-});
+// Route::get('/', function () {
+//     return view('welcome',[
+//         'title' => ["Beatless","Guilty Crown","Sakurasou no Pet no Kanojo@"],
+//         'path' => [
+//             "images/img.jpg",
+//             "images/img2.jpg",
+//             "images/img3.png"
+//         ]
+//     ]);
+// });
 
 Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/tes', function () {
-    return view('tes');
-});
+// Route::get('/tes', function () {
+//     return view('tes');
+// });
+
+Route::get('/','FirstController@welcome')->name('welcome');
+
+Route::get('/tes','FirstController@coba')->name('coba');

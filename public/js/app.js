@@ -14061,20 +14061,20 @@ Vue.component('example-for', __webpack_require__(46));
 Vue.component('callingapi', __webpack_require__(49));
 
 var app = new Vue({
-  el: '#app',
-  data: function data() {
-    return {
-      info: null
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get('POST https://api.coindesk.com/v1/bpi/currentprice.json').then(function (response) {
-      return _this.info = response;
-    });
-  }
+  el: '#app'
+  //   ,
+  //   data () {
+  //   return {
+  //     info: "not null"
+  //   }
+  // },
+  // mounted () {
+  //   axios
+  //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+  //     .then(response => (this.info = response))
+  // }
 });
+// Access-Control-Allow-Origin: https://api.coindesk.com
 
 /***/ }),
 /* 14 */
@@ -47995,9 +47995,9 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("p", [_vm._v("Hello World")]),
+    _c("p", [_vm._v("Hello World ini bagian component")]),
     _vm._v(" "),
-    _c("div", { domProps: { textContent: _vm._s(_vm.info) } })
+    _c("div", { domProps: { innerHTML: _vm._s(_vm.info) } })
   ])
 }
 var staticRenderFns = []

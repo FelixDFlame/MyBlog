@@ -24,15 +24,17 @@ Vue.component('example-for', require('./components/ExampleFor.vue'));
 Vue.component('callingapi', require('./components/CallingAPI.vue'));
 
 const app = new Vue({
-    el: '#app',
-    data () {
-    return {
-      info: null
-    }
-  },
-  mounted () {
-    axios
-      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-      .then(response => (this.info = response))
-  }
+    el: '#app'
+  //   ,
+  //   data () {
+  //   return {
+  //     info: "not null"
+  //   }
+  // },
+  // mounted () {
+  //   axios
+  //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+  //     .then(response => (this.info = response))
+  // }
 });
+// Access-Control-Allow-Origin: https://api.coindesk.com

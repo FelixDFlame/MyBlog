@@ -67,7 +67,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="container">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -86,6 +86,7 @@
                 <div class="title m-b-md">
                     My Blog
                 </div>
+                <br>
 
                 <!-- <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -110,6 +111,10 @@
                             <example-component path="{{ asset($path[$i]) }}" title="{{ $title[$i] }}"></example-component>
                             @endfor
                         </div>
+                        <br>    
+                    
+                            <input type='submit' value="Coba Action">
+                            <a href="http://localhost:8000//tes">Hai</a>
                     </div>
                 </div>
                 <script src="../js/app.js"></script>

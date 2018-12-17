@@ -1,8 +1,8 @@
 <template>
 
     <div class="container">
-        <p>Hello World</p>
-        <div v-text="info"></div>
+        <p>Hello World ini bagian component</p>
+        <div v-html="info"></div>
         <!-- <div v-html="info.pengumumanDetail.isi"> -->
         </div>
     </div>
