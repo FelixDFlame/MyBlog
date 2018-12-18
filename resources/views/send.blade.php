@@ -13,7 +13,10 @@
 </head>
 <body>
     <div class="" id="app">
-      <myform></myform>
+        <mynav></mynav>
+        <mycontact></mycontact>
+        {{-- <myform></myform> --}}
+        <add
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>

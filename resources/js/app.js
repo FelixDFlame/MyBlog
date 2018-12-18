@@ -19,10 +19,11 @@ window.Vue = require('vue');
 
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('myform', require('./components/loginForm.vue'));
+Vue.component('myform', require('./components/sendForm.vue'));
 Vue.component('example-for', require('./components/ExampleFor.vue'));
 Vue.component('callingapi', require('./components/CallingAPI.vue'));
-
+Vue.component('mynav', require('./components/mynavbar.vue'));
+Vue.component('mycontact', require('./components/AddContact.vue'));
 const app = new Vue({
     el: '#app'
   //   ,

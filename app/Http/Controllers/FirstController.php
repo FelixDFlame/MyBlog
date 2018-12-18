@@ -110,4 +110,8 @@ class FirstController extends Controller
             ]
         ));
     }
+    public function addContact()
+    {
+        return View::make('send');
+    }
 }

@@ -22,9 +22,9 @@
 //     ]);
 // });
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
 // Route::get('/tes', function () {
 //     return view('tes');
@@ -33,3 +33,5 @@ Route::get('/login', function () {
 Route::get('/','FirstController@welcome')->name('welcome');
 
 Route::get('/tes','FirstController@coba')->name('coba');
+
+Route::get('/addContact','FirstController@addContact')->name('addContact');
